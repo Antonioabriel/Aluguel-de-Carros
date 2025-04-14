@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros Disponíveis - RentEasy</title>
+    <link rel="stylesheet" href="carro.css">
+</head>
+<body>
+    <header>
+        <h1>Escolha seu carro</h1>
+    </header>
+    
+    <div class="carros-container">
+        <div class="carro">
+            <img src="carrosft\carro1.png" alt="Carro 1">
+            <h2>Fiat Argo</h2>
+            <p>Diária: R$120</p>
+            <button>Alugar</button>
+        </div>
+
+        <div class="carro">
+            <img src="carrosft\carro2.png" alt="Carro 2">
+            <h2>Chevrolet Onix</h2>
+            <p>Diária: R$150</p>
+            <button>Alugar</button>
+        </div>
+
+        <div class="carro">
+            <img src="carrosft\carro3.png" alt="Carro 3">
+            <h2>Volkswagen Gol</h2>
+            <p>Diária: R$110</p>
+            <button>Alugar</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.carro button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Carro alugado com sucesso!');
+            });
+        });
+    </script>
+</body>
+</html>
